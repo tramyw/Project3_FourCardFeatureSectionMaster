@@ -1,0 +1,149 @@
+body {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.6;
+  background-color: hsl(0, 0%, 98%);
+  color: hsl(234, 12%, 34%);
+  margin: 8%;
+  font-weight: 400;
+}
+
+header {
+  display: grid;
+  grid-row: auto;
+  margin: 80px 0;
+}
+
+.title {
+  text-align: center;
+  color: hsl(234, 12%, 34%);
+  display: grid;
+  row-gap: 10px;
+}
+
+.h1 {
+  font-size: 1.5rem;
+  font-weight: 200;
+}
+
+.bold {
+  font-weight: 600;
+}
+
+.description {
+  font-size: 15px;
+  color: hsl(229, 6%, 66%);
+}
+
+.container {
+  display: grid;
+  row-gap: 30px;
+  margin-bottom: 100px;
+}
+
+.wrapper {
+  display: grid;
+  row-gap: 30px;
+}
+
+.card {
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 10px 10px 0px hsl(229, 6%, 66%);
+  display: grid;
+  gap: 20px;
+}
+
+.card-1 {
+  border-top: solid thick hsl(180, 62%, 55%);
+}
+
+.card-2 {
+  border-top: solid thick hsl(0, 78%, 62%);
+}
+
+.card-3 {
+  border-top: solid thick hsl(34, 97%, 64%);
+}
+
+.card-4 {
+  border-top: solid thick hsl(212, 86%, 64%);
+}
+
+.h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.content {
+  font-size: 0.8rem;
+  color: hsl(229, 6%, 66%);
+}
+
+.text {
+  display: grid;
+  row-gap: 5px;
+}
+
+.icon {
+  justify-self: end;
+  transform: scale(0.9);
+}
+
+.footer {
+  width: 100vw;
+  background-color: hsl(333, 80%, 67%);
+  padding-bottom: 5px;
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 0%);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: hsl(0, 0%, 100%);
+}
+
+.attribution a {
+  color: hsl(300, 43%, 22%);
+}
+
+@media only screen and (min-width: 800px) {
+  body {
+    margin: 5% 10% 15% 10%;
+  }
+
+  .title {
+    margin: 0 15%;
+  }
+
+  .h1 {
+    font-size: 2.3rem;
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+  }
+
+  .card-1 {
+    grid-column-start: 1;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+
+  .wrapper {
+    grid-column-start: 2;
+    grid-row-start: 1;
+    grid-row-end: 4;
+  }
+
+  .card-4 {
+    grid-column-start: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+}
